@@ -1,0 +1,2342 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1446</width>
+    <height>835</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="font">
+   <font>
+    <pointsize>10</pointsize>
+   </font>
+  </property>
+  <property name="acceptDrops">
+   <bool>false</bool>
+  </property>
+  <property name="windowTitle">
+   <string>HOMYAAK - Тестовая система</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QStackedWidget" name="stackedWidget">
+      <property name="currentIndex">
+       <number>2</number>
+      </property>
+      <widget class="QWidget" name="page_1">
+       <layout class="QVBoxLayout" name="verticalLayout_2">
+        <property name="leftMargin">
+         <number>0</number>
+        </property>
+        <property name="topMargin">
+         <number>0</number>
+        </property>
+        <property name="rightMargin">
+         <number>0</number>
+        </property>
+        <property name="bottomMargin">
+         <number>0</number>
+        </property>
+        <item>
+         <widget class="QTabWidget" name="tabWidget">
+          <property name="font">
+           <font>
+            <pointsize>12</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QTabWidget::pane
+{
+	border: 1px;
+	background: #6F83D6;
+}
+
+QTabBar::tab
+{
+	background: #2C3D82;
+	margin-top: 2px;
+	top: -2px;
+}
+
+QTabBar::tab:selected
+{
+	background: #6F83D6;
+}
+
+QTabBar::tab:hover:!selected
+{
+	background: #071C71;
+}</string>
+          </property>
+          <property name="tabPosition">
+           <enum>QTabWidget::West</enum>
+          </property>
+          <property name="currentIndex">
+           <number>2</number>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>30</width>
+            <height>30</height>
+           </size>
+          </property>
+          <widget class="QWidget" name="tab_1">
+           <property name="font">
+            <font>
+             <pointsize>8</pointsize>
+            </font>
+           </property>
+           <attribute name="title">
+            <string/>
+           </attribute>
+           <widget class="QComboBox" name="comboBox_2">
+            <property name="geometry">
+             <rect>
+              <x>9</x>
+              <y>169</y>
+              <width>251</width>
+              <height>22</height>
+             </rect>
+            </property>
+           </widget>
+           <widget class="QTreeWidget" name="treeWidget_6">
+            <property name="geometry">
+             <rect>
+              <x>330</x>
+              <y>190</y>
+              <width>381</width>
+              <height>192</height>
+             </rect>
+            </property>
+            <column>
+             <property name="text">
+              <string>Имя</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Значение</string>
+             </property>
+            </column>
+           </widget>
+           <widget class="QWidget" name="layoutWidget">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>0</y>
+              <width>696</width>
+              <height>154</height>
+             </rect>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout_17">
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_12">
+               <item>
+                <widget class="QLabel" name="label_15">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>150</width>
+                   <height>150</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>150</width>
+                   <height>150</height>
+                  </size>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="pixmap">
+                  <pixmap>../Data/Icons/логотип без надписи.png</pixmap>
+                 </property>
+                 <property name="scaledContents">
+                  <bool>true</bool>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="label_16">
+                 <property name="font">
+                  <font>
+                   <family>Gill Sans Nova Cond Ultra Bold</family>
+                   <pointsize>25</pointsize>
+                   <weight>75</weight>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">font-family: &quot;Gill Sans Nova Cond Ultra Bold&quot;, sans-serif;
+  font-weight: bold;
+color: white;</string>
+                 </property>
+                 <property name="text">
+                  <string>Welcome to HOMYAAK</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <spacer name="horizontalSpacer_25">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_8">
+               <item>
+                <layout class="QVBoxLayout" name="verticalLayout_13">
+                 <property name="sizeConstraint">
+                  <enum>QLayout::SetFixedSize</enum>
+                 </property>
+                 <item>
+                  <layout class="QHBoxLayout" name="horizontalLayout_7">
+                   <item>
+                    <spacer name="horizontalSpacer_11">
+                     <property name="orientation">
+                      <enum>Qt::Horizontal</enum>
+                     </property>
+                     <property name="sizeHint" stdset="0">
+                      <size>
+                       <width>40</width>
+                       <height>20</height>
+                      </size>
+                     </property>
+                    </spacer>
+                   </item>
+                   <item>
+                    <widget class="QPushButton" name="pushButton_14">
+                     <property name="sizePolicy">
+                      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                       <horstretch>61</horstretch>
+                       <verstretch>61</verstretch>
+                      </sizepolicy>
+                     </property>
+                     <property name="minimumSize">
+                      <size>
+                       <width>61</width>
+                       <height>61</height>
+                      </size>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <pointsize>11</pointsize>
+                      </font>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true"/>
+                     </property>
+                     <property name="text">
+                      <string/>
+                     </property>
+                     <property name="icon">
+                      <iconset>
+                       <normaloff>../Data/Icons/exitAccount.png</normaloff>../Data/Icons/exitAccount.png</iconset>
+                     </property>
+                     <property name="iconSize">
+                      <size>
+                       <width>40</width>
+                       <height>40</height>
+                      </size>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <spacer name="horizontalSpacer_12">
+                     <property name="orientation">
+                      <enum>Qt::Horizontal</enum>
+                     </property>
+                     <property name="sizeHint" stdset="0">
+                      <size>
+                       <width>40</width>
+                       <height>20</height>
+                      </size>
+                     </property>
+                    </spacer>
+                   </item>
+                  </layout>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="label_13">
+                   <property name="font">
+                    <font>
+                     <pointsize>11</pointsize>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">color: white;</string>
+                   </property>
+                   <property name="text">
+                    <string>Выйти</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                   <property name="wordWrap">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+               <item>
+                <layout class="QVBoxLayout" name="verticalLayout_12">
+                 <property name="sizeConstraint">
+                  <enum>QLayout::SetFixedSize</enum>
+                 </property>
+                 <item>
+                  <layout class="QHBoxLayout" name="horizontalLayout_6">
+                   <item>
+                    <spacer name="horizontalSpacer_10">
+                     <property name="orientation">
+                      <enum>Qt::Horizontal</enum>
+                     </property>
+                     <property name="sizeHint" stdset="0">
+                      <size>
+                       <width>40</width>
+                       <height>20</height>
+                      </size>
+                     </property>
+                    </spacer>
+                   </item>
+                   <item>
+                    <widget class="QPushButton" name="pushButton_15">
+                     <property name="sizePolicy">
+                      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                       <horstretch>61</horstretch>
+                       <verstretch>61</verstretch>
+                      </sizepolicy>
+                     </property>
+                     <property name="minimumSize">
+                      <size>
+                       <width>61</width>
+                       <height>61</height>
+                      </size>
+                     </property>
+                     <property name="maximumSize">
+                      <size>
+                       <width>16777215</width>
+                       <height>16777215</height>
+                      </size>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <pointsize>11</pointsize>
+                      </font>
+                     </property>
+                     <property name="layoutDirection">
+                      <enum>Qt::LeftToRight</enum>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true"/>
+                     </property>
+                     <property name="text">
+                      <string/>
+                     </property>
+                     <property name="icon">
+                      <iconset>
+                       <normaloff>../Data/Icons/exit.png</normaloff>../Data/Icons/exit.png</iconset>
+                     </property>
+                     <property name="iconSize">
+                      <size>
+                       <width>40</width>
+                       <height>40</height>
+                      </size>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <spacer name="horizontalSpacer_9">
+                     <property name="orientation">
+                      <enum>Qt::Horizontal</enum>
+                     </property>
+                     <property name="sizeHint" stdset="0">
+                      <size>
+                       <width>40</width>
+                       <height>20</height>
+                      </size>
+                     </property>
+                    </spacer>
+                   </item>
+                  </layout>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="label_12">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <pointsize>11</pointsize>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">color: white;</string>
+                   </property>
+                   <property name="text">
+                    <string>Завершить работу</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                   <property name="wordWrap">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </widget>
+          </widget>
+          <widget class="QWidget" name="tab_2">
+           <attribute name="title">
+            <string/>
+           </attribute>
+           <layout class="QHBoxLayout" name="horizontalLayout_5">
+            <property name="spacing">
+             <number>0</number>
+            </property>
+            <property name="leftMargin">
+             <number>0</number>
+            </property>
+            <property name="topMargin">
+             <number>0</number>
+            </property>
+            <property name="rightMargin">
+             <number>0</number>
+            </property>
+            <property name="bottomMargin">
+             <number>0</number>
+            </property>
+            <item>
+             <layout class="QVBoxLayout" name="verticalLayout_4">
+              <property name="spacing">
+               <number>0</number>
+              </property>
+              <item>
+               <widget class="ColorPushButton" name="pushButton">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="font">
+                 <font>
+                  <pointsize>11</pointsize>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">background: #b0b0b0;</string>
+                </property>
+                <property name="text">
+                 <string>Обновить 🗘</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLabel" name="label_2">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="minimumSize">
+                 <size>
+                  <width>291</width>
+                  <height>68</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>16777215</width>
+                  <height>16777215</height>
+                 </size>
+                </property>
+                <property name="font">
+                 <font>
+                  <pointsize>11</pointsize>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QLabel {
+	background-color: #071C71;
+}</string>
+                </property>
+                <property name="text">
+                 <string>Информация о проекте</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QTextBrowser" name="textBrowser">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="minimumSize">
+                 <size>
+                  <width>291</width>
+                  <height>0</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>16777215</width>
+                  <height>16777215</height>
+                 </size>
+                </property>
+                <property name="font">
+                 <font>
+                  <pointsize>11</pointsize>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QTextBrowser {
+background: #B0B0B0;
+border: 0px;
+}</string>
+                </property>
+                <property name="placeholderText">
+                 <string>Выберите проект теста из списка</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="ColorPushButton" name="pushButton_4">
+                <property name="enabled">
+                 <bool>false</bool>
+                </property>
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="font">
+                 <font>
+                  <pointsize>11</pointsize>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">background: #b0b0b0;</string>
+                </property>
+                <property name="text">
+                 <string> Пройти тест 🠊</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="ColorPushButton" name="pushButton_5">
+                <property name="enabled">
+                 <bool>false</bool>
+                </property>
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="font">
+                 <font>
+                  <pointsize>11</pointsize>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">background: #b0b0b0;</string>
+                </property>
+                <property name="text">
+                 <string>Перейти в редактор 🔧</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="ColorPushButton" name="pushButton_13">
+                <property name="enabled">
+                 <bool>false</bool>
+                </property>
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="font">
+                 <font>
+                  <pointsize>11</pointsize>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">background: #b0b0b0;</string>
+                </property>
+                <property name="text">
+                 <string>Переименовать 🖉</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="ColorPushButton" name="pushButton_12">
+                <property name="enabled">
+                 <bool>false</bool>
+                </property>
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="font">
+                 <font>
+                  <pointsize>11</pointsize>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">background: #b0b0b0;</string>
+                </property>
+                <property name="text">
+                 <string>Удалить 🗑</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <widget class="QTreeWidget" name="treeWidget">
+              <property name="minimumSize">
+               <size>
+                <width>436</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <family>Arial</family>
+                <pointsize>13</pointsize>
+                <weight>50</weight>
+                <bold>false</bold>
+               </font>
+              </property>
+              <property name="cursor" stdset="0">
+               <cursorShape>ArrowCursor</cursorShape>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QTreeWidget {
+background: #171717;
+border: 0px;
+}
+
+QHeaderView::section {
+    background-color: #071C71;
+	color: #fff;
+	min-height: 69;
+}
+
+QTreeWidget::item {
+background: #6F83D6;
+min-height: 69;
+border-radius: 0px;
+}
+
+QTreeView::item { 
+	margin: 0px 0px 1px 0px; border: 0;
+}
+
+QTreeView::item:selected {
+    background-color: #b0b0b0;
+    color: black;
+}
+
+QTreeView::item:hover:!selected {
+    background-color: #6F83D6;
+    color: white;
+}
+</string>
+              </property>
+              <property name="verticalScrollMode">
+               <enum>QAbstractItemView::ScrollPerPixel</enum>
+              </property>
+              <property name="indentation">
+               <number>0</number>
+              </property>
+              <column>
+               <property name="text">
+                <string>Каталог проектов</string>
+               </property>
+              </column>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="tab_3">
+           <attribute name="title">
+            <string/>
+           </attribute>
+           <layout class="QVBoxLayout" name="verticalLayout_14">
+            <item>
+             <layout class="QVBoxLayout" name="verticalLayout_21">
+              <item>
+               <widget class="QLabel" name="label_4">
+                <property name="enabled">
+                 <bool>false</bool>
+                </property>
+                <property name="font">
+                 <font>
+                  <pointsize>11</pointsize>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">color: white;</string>
+                </property>
+                <property name="text">
+                 <string>Проект теста не выбран</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <layout class="QVBoxLayout" name="verticalLayout_20">
+                <item>
+                 <layout class="QHBoxLayout" name="horizontalLayout_10">
+                  <item>
+                   <layout class="QGridLayout" name="gridLayout_2">
+                    <property name="sizeConstraint">
+                     <enum>QLayout::SetMinimumSize</enum>
+                    </property>
+                    <item row="0" column="0">
+                     <layout class="QVBoxLayout" name="verticalLayout_23">
+                      <item>
+                       <widget class="QStackedWidget" name="stackedWidget_2">
+                        <property name="font">
+                         <font>
+                          <pointsize>11</pointsize>
+                         </font>
+                        </property>
+                        <property name="currentIndex">
+                         <number>1</number>
+                        </property>
+                        <widget class="QWidget" name="page">
+                         <layout class="QVBoxLayout" name="verticalLayout_5">
+                          <property name="leftMargin">
+                           <number>0</number>
+                          </property>
+                          <property name="topMargin">
+                           <number>0</number>
+                          </property>
+                          <property name="rightMargin">
+                           <number>0</number>
+                          </property>
+                          <property name="bottomMargin">
+                           <number>0</number>
+                          </property>
+                          <item>
+                           <widget class="QTreeWidget" name="treeWidget_3">
+                            <property name="font">
+                             <font>
+                              <pointsize>11</pointsize>
+                             </font>
+                            </property>
+                            <property name="styleSheet">
+                             <string notr="true">QTreeWidget {
+background: white;
+border: 0px;
+}
+
+QHeaderView::section {
+    background-color: #071C71;
+	color: #fff;
+	min-height: 40;
+}
+
+QTreeWidget::item {
+background: #b0b0b0;
+min-height: 40;
+border-radius: 0px;
+}
+
+QTreeView::item { 
+	margin: 0px 0px 1px 0px; border: 0;
+}
+
+QTreeView::item:selected {
+    background-color: #6F83D6;
+    color: white;
+}
+
+QTreeView::item:hover:!selected {
+    color: white;
+}</string>
+                            </property>
+                            <property name="indentation">
+                             <number>0</number>
+                            </property>
+                            <property name="animated">
+                             <bool>true</bool>
+                            </property>
+                            <attribute name="headerCascadingSectionResizes">
+                             <bool>false</bool>
+                            </attribute>
+                            <attribute name="headerHighlightSections">
+                             <bool>false</bool>
+                            </attribute>
+                            <column>
+                             <property name="text">
+                              <string>Варианты ответов</string>
+                             </property>
+                            </column>
+                            <column>
+                             <property name="text">
+                              <string>Верный</string>
+                             </property>
+                            </column>
+                           </widget>
+                          </item>
+                         </layout>
+                        </widget>
+                        <widget class="QWidget" name="page_3">
+                         <layout class="QVBoxLayout" name="verticalLayout_6">
+                          <property name="leftMargin">
+                           <number>0</number>
+                          </property>
+                          <property name="topMargin">
+                           <number>0</number>
+                          </property>
+                          <property name="rightMargin">
+                           <number>0</number>
+                          </property>
+                          <property name="bottomMargin">
+                           <number>0</number>
+                          </property>
+                          <item>
+                           <widget class="QPlainTextEdit" name="plainTextEdit_2">
+                            <property name="font">
+                             <font>
+                              <pointsize>11</pointsize>
+                             </font>
+                            </property>
+                            <property name="placeholderText">
+                             <string>Введите ответ на вопрос</string>
+                            </property>
+                           </widget>
+                          </item>
+                         </layout>
+                        </widget>
+                       </widget>
+                      </item>
+                      <item>
+                       <layout class="QVBoxLayout" name="verticalLayout_8">
+                        <property name="sizeConstraint">
+                         <enum>QLayout::SetDefaultConstraint</enum>
+                        </property>
+                        <item>
+                         <widget class="QComboBox" name="comboBox">
+                          <property name="font">
+                           <font>
+                            <pointsize>11</pointsize>
+                           </font>
+                          </property>
+                          <item>
+                           <property name="text">
+                            <string>Вопрос открытого типа</string>
+                           </property>
+                          </item>
+                          <item>
+                           <property name="text">
+                            <string>Варианты ответов</string>
+                           </property>
+                          </item>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="ColorPushButton" name="pushButton_8">
+                          <property name="enabled">
+                           <bool>false</bool>
+                          </property>
+                          <property name="font">
+                           <font>
+                            <pointsize>11</pointsize>
+                           </font>
+                          </property>
+                          <property name="styleSheet">
+                           <string notr="true">background: #b0b0b0;</string>
+                          </property>
+                          <property name="text">
+                           <string>Добавить вариант ответа +</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="ColorPushButton" name="pushButton_9">
+                          <property name="enabled">
+                           <bool>false</bool>
+                          </property>
+                          <property name="font">
+                           <font>
+                            <pointsize>11</pointsize>
+                           </font>
+                          </property>
+                          <property name="styleSheet">
+                           <string notr="true">background: #b0b0b0;</string>
+                          </property>
+                          <property name="text">
+                           <string>Удалить вариант ответа −</string>
+                          </property>
+                         </widget>
+                        </item>
+                       </layout>
+                      </item>
+                     </layout>
+                    </item>
+                    <item row="0" column="1" rowspan="2">
+                     <layout class="QVBoxLayout" name="verticalLayout_9">
+                      <item>
+                       <widget class="QLineEdit" name="lineEdit">
+                        <property name="enabled">
+                         <bool>false</bool>
+                        </property>
+                        <property name="font">
+                         <font>
+                          <pointsize>11</pointsize>
+                         </font>
+                        </property>
+                        <property name="text">
+                         <string/>
+                        </property>
+                        <property name="placeholderText">
+                         <string>Заголовок вопроса</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QPlainTextEdit" name="plainTextEdit">
+                        <property name="font">
+                         <font>
+                          <pointsize>11</pointsize>
+                         </font>
+                        </property>
+                        <property name="placeholderText">
+                         <string>Описание сути вопроса или условие задачи</string>
+                        </property>
+                       </widget>
+                      </item>
+                     </layout>
+                    </item>
+                    <item row="2" column="1">
+                     <layout class="QVBoxLayout" name="verticalLayout_10">
+                      <item>
+                       <widget class="ColorPushButton" name="pushButton_11">
+                        <property name="font">
+                         <font>
+                          <pointsize>11</pointsize>
+                         </font>
+                        </property>
+                        <property name="styleSheet">
+                         <string notr="true">background: #b0b0b0;</string>
+                        </property>
+                        <property name="text">
+                         <string>Установить изображение 🖼</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <layout class="QHBoxLayout" name="horizontalLayout_13">
+                        <item>
+                         <spacer name="horizontalSpacer_15">
+                          <property name="orientation">
+                           <enum>Qt::Horizontal</enum>
+                          </property>
+                          <property name="sizeHint" stdset="0">
+                           <size>
+                            <width>40</width>
+                            <height>20</height>
+                           </size>
+                          </property>
+                         </spacer>
+                        </item>
+                        <item>
+                         <widget class="QLabel" name="label_11">
+                          <property name="sizePolicy">
+                           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                           </sizepolicy>
+                          </property>
+                          <property name="minimumSize">
+                           <size>
+                            <width>350</width>
+                            <height>250</height>
+                           </size>
+                          </property>
+                          <property name="maximumSize">
+                           <size>
+                            <width>350</width>
+                            <height>250</height>
+                           </size>
+                          </property>
+                          <property name="font">
+                           <font>
+                            <pointsize>11</pointsize>
+                           </font>
+                          </property>
+                          <property name="styleSheet">
+                           <string notr="true"/>
+                          </property>
+                          <property name="text">
+                           <string/>
+                          </property>
+                          <property name="scaledContents">
+                           <bool>true</bool>
+                          </property>
+                          <property name="alignment">
+                           <set>Qt::AlignCenter</set>
+                          </property>
+                         </widget>
+                        </item>
+                        <item>
+                         <spacer name="horizontalSpacer_16">
+                          <property name="orientation">
+                           <enum>Qt::Horizontal</enum>
+                          </property>
+                          <property name="sizeHint" stdset="0">
+                           <size>
+                            <width>40</width>
+                            <height>20</height>
+                           </size>
+                          </property>
+                         </spacer>
+                        </item>
+                       </layout>
+                      </item>
+                     </layout>
+                    </item>
+                    <item row="1" column="0" rowspan="2">
+                     <layout class="QVBoxLayout" name="verticalLayout_7">
+                      <item>
+                       <widget class="QCheckBox" name="checkBox">
+                        <property name="font">
+                         <font>
+                          <pointsize>11</pointsize>
+                         </font>
+                        </property>
+                        <property name="styleSheet">
+                         <string notr="true">color: white;</string>
+                        </property>
+                        <property name="text">
+                         <string>Подсказка</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QPlainTextEdit" name="plainTextEdit_3">
+                        <property name="enabled">
+                         <bool>false</bool>
+                        </property>
+                        <property name="font">
+                         <font>
+                          <pointsize>11</pointsize>
+                         </font>
+                        </property>
+                        <property name="placeholderText">
+                         <string>Текст подсказки</string>
+                        </property>
+                       </widget>
+                      </item>
+                     </layout>
+                    </item>
+                   </layout>
+                  </item>
+                  <item>
+                   <layout class="QVBoxLayout" name="verticalLayout_19">
+                    <item>
+                     <widget class="ColorPushButton" name="pushButton_3">
+                      <property name="font">
+                       <font>
+                        <pointsize>11</pointsize>
+                       </font>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true">background: #b0b0b0;</string>
+                      </property>
+                      <property name="text">
+                       <string>Создать тест ⨁</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QTreeWidget" name="treeWidget_2">
+                      <property name="font">
+                       <font>
+                        <pointsize>11</pointsize>
+                       </font>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true">QTreeWidget {
+background: white;
+border: 0px;
+}
+
+QHeaderView::section {
+    background-color: #071C71;
+	color: #fff;
+	min-height: 40;
+}
+
+QTreeWidget::item {
+background: #b0b0b0;
+min-height: 40;
+border-radius: 0px;
+}
+
+QTreeView::item { 
+	margin: 0px 0px 1px 0px; border: 0;
+}
+
+QTreeView::item:selected {
+    background-color: #6F83D6;
+    color: white;
+}
+
+QTreeView::item:hover:!selected {
+    color: white;
+}</string>
+                      </property>
+                      <property name="indentation">
+                       <number>0</number>
+                      </property>
+                      <property name="animated">
+                       <bool>true</bool>
+                      </property>
+                      <column>
+                       <property name="text">
+                        <string>Вопросы</string>
+                       </property>
+                       <property name="font">
+                        <font>
+                         <pointsize>11</pointsize>
+                        </font>
+                       </property>
+                      </column>
+                     </widget>
+                    </item>
+                   </layout>
+                  </item>
+                 </layout>
+                </item>
+                <item>
+                 <layout class="QHBoxLayout" name="horizontalLayout_9">
+                  <item>
+                   <widget class="ColorPushButton" name="pushButton_6">
+                    <property name="minimumSize">
+                     <size>
+                      <width>0</width>
+                      <height>50</height>
+                     </size>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <pointsize>11</pointsize>
+                     </font>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">background: #b0b0b0;</string>
+                    </property>
+                    <property name="text">
+                     <string>Добавить вопрос ➕</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="ColorPushButton" name="pushButton_7">
+                    <property name="enabled">
+                     <bool>false</bool>
+                    </property>
+                    <property name="minimumSize">
+                     <size>
+                      <width>0</width>
+                      <height>50</height>
+                     </size>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <pointsize>11</pointsize>
+                     </font>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">background: #b0b0b0;</string>
+                    </property>
+                    <property name="text">
+                     <string>Изменить вопрос 🖉</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="ColorPushButton" name="pushButton_10">
+                    <property name="enabled">
+                     <bool>false</bool>
+                    </property>
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="minimumSize">
+                     <size>
+                      <width>0</width>
+                      <height>50</height>
+                     </size>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <pointsize>11</pointsize>
+                     </font>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">background: #b0b0b0;</string>
+                    </property>
+                    <property name="text">
+                     <string>Удалить вопрос 🗑</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <layout class="QVBoxLayout" name="verticalLayout_18">
+                    <item>
+                     <widget class="QLabel" name="label_3">
+                      <property name="font">
+                       <font>
+                        <pointsize>11</pointsize>
+                       </font>
+                      </property>
+                      <property name="text">
+                       <string>Цена вопроса в баллах</string>
+                      </property>
+                      <property name="alignment">
+                       <set>Qt::AlignCenter</set>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QSpinBox" name="spinBox">
+                      <property name="sizePolicy">
+                       <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                        <horstretch>0</horstretch>
+                        <verstretch>0</verstretch>
+                       </sizepolicy>
+                      </property>
+                      <property name="minimumSize">
+                       <size>
+                        <width>0</width>
+                        <height>40</height>
+                       </size>
+                      </property>
+                      <property name="minimum">
+                       <number>0</number>
+                      </property>
+                      <property name="maximum">
+                       <number>100</number>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </item>
+                 </layout>
+                </item>
+               </layout>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="tab_4">
+           <property name="font">
+            <font>
+             <pointsize>11</pointsize>
+            </font>
+           </property>
+           <attribute name="title">
+            <string/>
+           </attribute>
+           <layout class="QVBoxLayout" name="verticalLayout_11">
+            <property name="spacing">
+             <number>0</number>
+            </property>
+            <property name="leftMargin">
+             <number>0</number>
+            </property>
+            <property name="topMargin">
+             <number>0</number>
+            </property>
+            <property name="rightMargin">
+             <number>0</number>
+            </property>
+            <property name="bottomMargin">
+             <number>0</number>
+            </property>
+            <item>
+             <widget class="QTextBrowser" name="textBrowser_2">
+              <property name="html">
+               <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;title&gt;Добро пожаловать в приложение для создания тестов!&lt;/title&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:7.875pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;h1 style=&quot; margin-top:18px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Segoe UI'; font-size:9pt; font-weight:696;&quot;&gt;Добро пожаловать в тестовую систему HOMYAAK!&lt;/span&gt;&lt;/h1&gt;
+&lt;h2 style=&quot; margin-top:16px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Segoe UI'; font-size:9pt; font-weight:696;&quot;&gt;Общее описание &lt;/span&gt;&lt;/h2&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Segoe UI'; font-size:9pt;&quot;&gt;HOMYAAK позволяет создавать тесты по любым областям знаний. Вы можете создавать и проходить тесты с любым количеством вопросов и ответов, добавлять картинки к вопросам и устанавливать ограничения по времени на тесты. Вопросы в тестах могут быть как открытого, так и закрытого типа. &lt;/span&gt;&lt;/p&gt;
+&lt;h2 style=&quot; margin-top:16px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Segoe UI'; font-size:9pt; font-weight:696;&quot;&gt;Создание тестов &lt;/span&gt;&lt;/h2&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Segoe UI'; font-size:9pt;&quot;&gt;Чтобы создать тест, выберите вкладку &amp;quot;Редактор&amp;quot; в меню приложения. Далее нажмите на &amp;quot;Создать тест&amp;quot;, после чего Вы сможете настраивать проект вашего будущего теста. Добавляйте вопросы, добавляйте варианты ответов, либо ответ, если вопрос открытого типа, на каждый вопрос можно поставить картинку, которая будет отображаться при прохождении теста. Это может помочь пользователям понять условие вопроса. Если Вы закончили редактирование проекта, Вы можете перейте во вкладку &amp;quot;Каталог&amp;quot;, обновить список всех проектов, найти свой проект и нажать на кнопку &amp;quot;Пройти тест&amp;quot;, после чего откроется окно прохождения теста, где Вы сможете его пройти с учетом всех настроек в редакторе.&lt;/span&gt;&lt;/p&gt;
+&lt;h2 style=&quot; margin-top:16px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Segoe UI'; font-size:9pt; font-weight:696;&quot;&gt;Прохождение тестов &lt;/span&gt;&lt;/h2&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Segoe UI'; font-size:9pt;&quot;&gt;Чтобы пройти тест, перейдите во вкладку &amp;quot;Каталог&amp;quot;. Нажмите на кнопку &amp;quot;Обновить&amp;quot;, чтобы в списке появились все существующие проекты тестов. Выберите по названию и описанию нужный для вас тест и нажмите на кнопку &amp;quot;Пройти тест&amp;quot;. Вы попадете в окно прохождения теста. Далее читайте условие вопроса, заглядывайте в подсказку (кнопка &amp;quot;?&amp;quot;) и переходите к следующему вопросу. Когда вы будете находится на последнем вопросе, кнопка &amp;quot;Следующий&amp;quot; поменяется на &amp;quot;Завершить&amp;quot;. По ее нажатию перед Вами появятся результаты выполнения Вами теста. Вы можете завершить тест и не выполняя его до конца. В правом верхнем углу также есть кнопка &amp;quot;Завершить&amp;quot;, по нажатию на которую Вы попадете во вкладку &amp;quot;Каталог&amp;quot;.&lt;/span&gt;&lt;/p&gt;
+&lt;h2 style=&quot; margin-top:16px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Segoe UI'; font-size:9pt; font-weight:696;&quot;&gt;Каталог тестов &lt;/span&gt;&lt;/h2&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Segoe UI'; font-size:9pt;&quot;&gt;Все созданные тесты можно найти в меню каталога. Вы можете просмотреть информацию о каждом тесте, включая количество вопросов, цену в баллах и ограничение по времени. Если выбрать в списке проектов тест, то Вы сможете из каталога перейти в редактор с текущими настройками выбранного теста. Также Вы сможете пройти тест, переименовать его или удалить. Учтите, что на проект теста может быть установлен пароль. В таком случае Вы сможете только пройти тест, если не знаете пароля.&lt;/span&gt;&lt;/p&gt;
+&lt;h2 style=&quot; margin-top:16px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Segoe UI'; font-size:9pt; font-weight:696;&quot;&gt;Защита тестов &lt;/span&gt;&lt;/h2&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Segoe UI'; font-size:9pt;&quot;&gt;Вы можете защитить свой тест, установив на него пароль. Таким образом, другие пользователи не смогут изменить, переименовать или удалить Ваш тест без Вашего разрешения.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="page_2">
+       <layout class="QVBoxLayout" name="verticalLayout_3">
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_4">
+          <item>
+           <spacer name="horizontalSpacer_8">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QLabel" name="label">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: #fc7979;
+border: 3px solid;
+border-color: #fc0303;
+padding: 10px;
+border-radius:7px;</string>
+            </property>
+            <property name="text">
+             <string>Ошибка</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+            <property name="wordWrap">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_7">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <spacer name="verticalSpacer_4">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>0</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_11">
+          <item>
+           <spacer name="horizontalSpacer_13">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_14">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>400</width>
+              <height>400</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>400</width>
+              <height>400</height>
+             </size>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="pixmap">
+             <pixmap>../Data/Icons/логотип полный.png</pixmap>
+            </property>
+            <property name="scaledContents">
+             <bool>true</bool>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_14">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_2">
+          <item>
+           <spacer name="horizontalSpacer_2">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <layout class="QGridLayout" name="gridLayout">
+            <item row="0" column="0">
+             <widget class="ColorLineEdit" name="lineEdit_1">
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>31</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <family>Verdana</family>
+                <pointsize>12</pointsize>
+               </font>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+              </property>
+              <property name="placeholderText">
+               <string>Логин</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <widget class="ColorLineEdit" name="lineEdit_2">
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>31</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <family>Verdana</family>
+                <pointsize>12</pointsize>
+               </font>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+              </property>
+              <property name="placeholderText">
+               <string>Пароль</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="0">
+             <widget class="ColorLineEdit" name="lineEdit_3">
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>31</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <family>Verdana</family>
+                <pointsize>12</pointsize>
+               </font>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+              </property>
+              <property name="placeholderText">
+               <string>Подтверждение пароля</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <spacer name="verticalSpacer_3">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeType">
+           <enum>QSizePolicy::Fixed</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout">
+          <item>
+           <spacer name="horizontalSpacer_3">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="ColorPushButton" name="pushButton_1">
+            <property name="minimumSize">
+             <size>
+              <width>250</width>
+              <height>41</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>12</pointsize>
+             </font>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="text">
+             <string>Войти</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_4">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <spacer name="verticalSpacer">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeType">
+           <enum>QSizePolicy::Fixed</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_3">
+          <item>
+           <spacer name="horizontalSpacer_5">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_2">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="text">
+             <string>Еще не зарегистрировались?</string>
+            </property>
+            <property name="flat">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_6">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="page_4">
+       <property name="styleSheet">
+        <string notr="true">#page_4 {
+background: #6F83D6;
+}</string>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_22">
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_14">
+          <item>
+           <widget class="ColorPushButton" name="pushButton_19">
+            <property name="maximumSize">
+             <size>
+              <width>41</width>
+              <height>41</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>11</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background: #b0b0b0;</string>
+            </property>
+            <property name="text">
+             <string>?</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_17">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_8">
+            <property name="minimumSize">
+             <size>
+              <width>131</width>
+              <height>41</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>11</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color: white;
+</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+            <property name="wordWrap">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_18">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_7">
+            <property name="minimumSize">
+             <size>
+              <width>300</width>
+              <height>61</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>13</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color: white;
+</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_19">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_9">
+            <property name="minimumSize">
+             <size>
+              <width>131</width>
+              <height>41</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>11</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color: white;
+</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_20">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="ColorPushButton" name="pushButton_16">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>41</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>11</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background: #b0b0b0;</string>
+            </property>
+            <property name="text">
+             <string>Завершить</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_15">
+          <item>
+           <widget class="QLabel" name="label_10">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>71</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>130</width>
+              <height>51</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>15</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color: white;
+background-color: #071C71;
+</string>
+            </property>
+            <property name="text">
+             <string>∞</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_21">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_5">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>350</width>
+              <height>250</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>350</width>
+              <height>250</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>11</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color: white;
+background: #b0b0b0;</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_22">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <layout class="QVBoxLayout" name="verticalLayout_15">
+            <item>
+             <widget class="QTreeWidget" name="treeWidget_5">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>11</pointsize>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QTreeWidget {
+background: white;
+border: 0px;
+}
+
+QHeaderView::section {
+    background-color: #071C71;
+	color: #fff;
+	min-height: 40;
+}
+
+QTreeWidget::item {
+background: #b0b0b0;
+min-height: 40;
+border-radius: 0px;
+}
+
+QTreeView::item { 
+	margin: 0px 0px 1px 0px; border: 0;
+}
+
+QTreeView::item:selected {
+    background-color: #6F83D6;
+    color: white;
+}
+
+QTreeView::item:hover:!selected {
+    color: white;
+}</string>
+              </property>
+              <property name="indentation">
+               <number>0</number>
+              </property>
+              <column>
+               <property name="text">
+                <string>Навигация по вопросам</string>
+               </property>
+              </column>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_6">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>61</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>11</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: white;
+background-color: #071C71;
+</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+          <property name="wordWrap">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_16">
+          <item>
+           <widget class="ColorPushButton" name="pushButton_17">
+            <property name="minimumSize">
+             <size>
+              <width>119</width>
+              <height>41</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>119</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>11</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background: #b0b0b0;</string>
+            </property>
+            <property name="text">
+             <string>Предыдущий</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_23">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QStackedWidget" name="stackedWidget_3">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>401</width>
+              <height>201</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>11</pointsize>
+             </font>
+            </property>
+            <property name="currentIndex">
+             <number>1</number>
+            </property>
+            <widget class="QWidget" name="page_5">
+             <layout class="QVBoxLayout" name="verticalLayout_16">
+              <property name="leftMargin">
+               <number>0</number>
+              </property>
+              <property name="topMargin">
+               <number>0</number>
+              </property>
+              <property name="rightMargin">
+               <number>0</number>
+              </property>
+              <property name="bottomMargin">
+               <number>0</number>
+              </property>
+              <item>
+               <widget class="QPlainTextEdit" name="plainTextEdit_4">
+                <property name="font">
+                 <font>
+                  <pointsize>11</pointsize>
+                 </font>
+                </property>
+                <property name="placeholderText">
+                 <string>Введите ответ на вопрос</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="page_6">
+             <layout class="QVBoxLayout" name="verticalLayout_17">
+              <property name="leftMargin">
+               <number>0</number>
+              </property>
+              <property name="topMargin">
+               <number>0</number>
+              </property>
+              <property name="rightMargin">
+               <number>0</number>
+              </property>
+              <property name="bottomMargin">
+               <number>0</number>
+              </property>
+              <item>
+               <widget class="QTreeWidget" name="treeWidget_4">
+                <property name="styleSheet">
+                 <string notr="true">QTreeWidget {
+background: white;
+border: 0px;
+}
+
+QHeaderView::section {
+    background-color: #071C71;
+	color: #fff;
+	min-height: 40;
+}
+
+QTreeWidget::item {
+background: #b0b0b0;
+min-height: 40;
+border-radius: 0px;
+}
+
+QTreeView::item { 
+	margin: 0px 0px 1px 0px; border: 0;
+}
+
+QTreeView::item:selected {
+    background-color: #6F83D6;
+    color: white;
+}
+
+QTreeView::item:hover:!selected {
+    color: white;
+}</string>
+                </property>
+                <column>
+                 <property name="text">
+                  <string/>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>Варианты ответов</string>
+                 </property>
+                </column>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_24">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="ColorPushButton" name="pushButton_18">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>119</width>
+              <height>41</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>119</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>11</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background: #b0b0b0;</string>
+            </property>
+            <property name="text">
+             <string>Следующий</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>ColorPushButton</class>
+   <extends>QPushButton</extends>
+   <header>colorpushbutton.h</header>
+  </customwidget>
+  <customwidget>
+   <class>ColorLineEdit</class>
+   <extends>QLineEdit</extends>
+   <header>colorlineedit.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,56 @@
+* {
+font-family: Arial, sans-serif;
+}
+
+#page_2 {
+background-color: #071C71;
+}
+
+#label_1, #label_2, #label_3 {
+color: #fff;
+}
+
+#lineEdit_1, #lineEdit_2, #lineEdit_3 {
+background-color: #171717;
+color: #fff;
+border-radius:7px;
+}
+
+#lineEdit_1:hover, #lineEdit_2:hover, #lineEdit_3:hover {
+background-color: #171717;
+color: #fff;
+border-radius:7px;
+}
+
+#lineEdit_1:focus, #lineEdit_2:focus,#lineEdit_3:focus {
+background-color: #fff;
+color: #000;
+}
+
+#pushButton_1 {
+background-color: #2C3D82;
+border: none;
+border-radius:7px;
+color: #fff;
+}
+
+#pushButton_1:hover {
+color: #000;
+}
+
+#pushButton_2 {
+background: none;
+border: none;
+margin: 0;
+padding: 0;
+text-decoration: underline;
+color: white;
+}
+
+#pushButton_2:hover {
+color: blue;
+}
+
+#page_1 {
+background-color: #071C71;
+}

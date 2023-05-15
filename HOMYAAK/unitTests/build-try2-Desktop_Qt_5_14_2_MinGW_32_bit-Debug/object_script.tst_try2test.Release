@@ -1,0 +1,12 @@
+release/tst_try2test.o
+release/test.o
+release/testquestion.o
+release/tst_try2test.o
+release/workwithfile.o
+release/workwithfile.o
+release/workwithhistory.o
+release/workwithstats.o
+release/workwithstats.o
+release/test.o
+release/testquestion.o
+release/workwithhistory.o
